@@ -11,6 +11,9 @@ password = os.environ.get('DEVICE_PASSWORD')
 secret = os.environ.get('DEVICE_SECRET')
 ip = os.environ.get('DEVICE_IP')
 
+# set ntc_templates to ENV
+os.environ['NET_TEXTFSM'] = f"{os.path.dirname(os.path.dirname(__file__))}\\venv\Lib\site-packages\\ntc_templates\\templates"
+
 # device info for netmiko
 router = {
     'device_type': 'cisco_ios_telnet',
