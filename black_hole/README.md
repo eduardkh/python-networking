@@ -1,4 +1,4 @@
-# black_hole (play along on windows
+# black_hole (play along on windows)
     before you begin, you must have a reachable cisco router with telnet and privilege 15 enabled
 > create a virtual environment
 
