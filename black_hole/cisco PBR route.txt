@@ -1,0 +1,15 @@
+!
+ip access-list standard DoS_Attack
+ permit 10.0.0.0 0.0.0.255
+ permit 40.0.0.0 0.0.0.255
+!
+!
+route-map TO_null0 permit 10
+ match ip address DoS_Attack
+ set interface Null0
+!
+!
+interface GigabitEthernet0/1
+ ip address 172.16.0.1 255.255.255.252
+ ip policy route-map TO_null0
+!
