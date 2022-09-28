@@ -32,6 +32,6 @@ try:
             print(
                 f"- > interface {iface} is alive and reachable via {addr}")
 
-    c.close()
+    c.disconnect()
 except Exception as e:
     print(e)
