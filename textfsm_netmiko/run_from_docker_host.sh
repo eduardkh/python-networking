@@ -1,2 +1,0 @@
-# must not use load_dotenv
-docker run --net host -ti --rm --env-file .env --volume $(pwd)/show_ip_interface_brief.py:/show_ip_interface_brief.py demisto/netmiko:1.0.0.34185 python3 /show_ip_interface_brief.py

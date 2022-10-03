@@ -1,0 +1,1 @@
+docker run  -ti --rm --env-file .env --volume $(pwd)/show_ip_interface_brief.py:/show_ip_interface_brief.py demisto/netmiko:1.0.0.34185 python /show_ip_interface_brief.py
