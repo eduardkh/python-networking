@@ -25,6 +25,7 @@ try:
     c.enable()
     interfaces = c.send_command("show ip interface brief", use_textfsm=True)
     # print(interfaces)
+    # print("*"*80)
     for interface in interfaces:
         if interface['status'] == 'up':
             iface = interface['intf']
